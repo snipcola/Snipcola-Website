@@ -1,0 +1,57 @@
+:root {
+  --primary: #a6d189;
+  --primary-rgb: 166, 209, 137;
+  --col-black: #10190a;
+
+  --col-900-dark: #232634;
+  --col-800-dark: #292c3c;
+  --col-700-dark: #303446;
+  --col-600-dark: #414559;
+  --text-dark: #e9f3e1;
+
+  --col-900-light: #eff1f5;
+  --col-800-light: #e6e9ef;
+  --col-700-light: #eff1f5;
+  --col-600-light: #ccd0da;
+  --text-light: var(--col-black);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --col-900: var(--col-900-dark);
+    --col-800: var(--col-800-dark);
+    --col-700: var(--col-700-dark);
+    --col-600: var(--col-600-dark);
+    --text: var(--text-dark);
+  }
+}
+
+html.dark {
+  --col-900: var(--col-900-dark);
+  --col-800: var(--col-800-dark);
+  --col-700: var(--col-700-dark);
+  --col-600: var(--col-600-dark);
+  --text: var(--text-dark);
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    --col-900: var(--col-900-light);
+    --col-800: var(--col-800-light);
+    --col-700: var(--col-700-light);
+    --col-600: var(--col-600-light);
+    --text: var(--text-light);
+  }
+
+  .header .brand .image {
+    background-color: var(--col-black) !important;
+  }
+}
+
+html.light {
+  --col-900: var(--col-900-light);
+  --col-800: var(--col-800-light);
+  --col-700: var(--col-700-light);
+  --col-600: var(--col-600-light);
+  --text: var(--text-light);
+}

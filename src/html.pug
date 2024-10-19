@@ -1,0 +1,105 @@
+doctype html
+html(lang = "en")
+  head
+    title Snipcola
+    meta(name = "description", content = "This is my home page, containing links to the projects I've worked on.")
+    meta(charset = "UTF-8")
+    meta(name = "viewport", content = "width=device-width, initial-scale=1.0")
+    link(rel = "icon", type = "image/png", href = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAdVBMVEVHcExizjpizjpizjrY887Y887Y885izjpizjrY885izjqU3Xpizjpizjp21FVizjpizjpizjpizjpizjpizjpizjpizjpizjpizjpizjrY887Y887Y887Y887Y887Y887Y887Y887Y887Y887Y887Y885izjoOQRc7AAAAJXRSTlMA4iX8tx3esgUHGAJX9A7rL3ef1YxnyEq8P/brMHBLh6POPZZcwlVUTwAAA0pJREFUaN7tmNmaoyAQhaPEaARUFESNWxZ9/0ccs0zabtNjAXozn+eir9r81kLVwd1u06ZNm34IHzWk8vvOpWravboqMOJYX89Fp6UKjNhrErquqGEM56qN6LqDA2Jczp2BWgxh1AcTRnFbn9GdIdkqzRhdA6n53owBKTtuzBjDIZmve30yY+wBgQSGyTpdABW5FUaMosLrB3IFDGBcfwukOJ0O8xoVsQ0gY7F95/bcNre6LJ1Z3b6OVQsaWq9zeNpXF+eZXDyXY3x9x90EoMFYPRDXyyOzgQ15yPk7S08VbCEeh7IXbXl/+SBnWZJDBvarivsLcFM5h+5wu7+PLzLa9zSCBt8dKge60+vuXN4RLEH9IMsGtsqhKeHOobkzPJL2TyU+KPhzU2I449gMefU5fTH6DFD48npzdio6DnHYbv9WDHhBjHdqGv7fTr8YPV/HLvrZiNGzVRhePGYgsgqE0DGESg+vkKxxQYZIEjfmjMjI9gNvMYhA/VSIhlaSuTETJI8GmmFwQdb/KvTEJWk2BCeewWnhorAHCg3BpVq5xAT1qvqbS/7MZTAfHOt1hdA7lzMzFce9uVCuX3ew5raDnywASYOlmusfcmc6TaO5puKrNddIYgayRHNROTPm3QUgYbR+c6E56/FuLvTSGs0lqfWYeYIQIuXwRwjGeOxmaWKFFC3TXBGJfO9lJ0bOAnuBb0e5FIy72SxOaG4Z/PY++IEjYgjvl+iQXNJw3HGSsAeOwptLK0LPz5k7mkYQX6tsbtwk/JazLFgagSfHF8UrOKjJ8V3Bck52g4blDOaqONkNNFdMheSpUPUEia1S0oildPa9IusnRKW5Im4Bmh5z5ck1KgWzQPcsObEESIAz5SLQsItS5Y31ZVUt2CMfGNCSeCyEOCjskQ9rFDEgg0KqGMiYfjKPkTIDEd/+oGGf8JR+XFgx6AYhxg9bJLU+6PfNSEELK/92uFJVhwQK5MetNFR0KyFkbnnczHFxyA1SUiNIBlm8vtENCFmgIS+M7g0haFv56foMs0AsGMPoTpoCl65Ba4Ucaui0L1nUzaFfWHTvP1YswVsdS42y0yQWtspXMOIqKuYiHy4zSt+iPFWt8NVw06ZN/4H+ABkk6IcozmqaAAAAAElFTkSuQmCC")
+    each cssFile in htmlWebpackPlugin.files.css
+      style !{compilation.assets[cssFile.substr(htmlWebpackPlugin.files.publicPath.length)].source()}
+  body
+    each jsFile in htmlWebpackPlugin.files.js
+      script !{compilation.assets[jsFile.substr(htmlWebpackPlugin.files.publicPath.length)].source()}
+    div(class = "container")
+      div(class = "header")
+        div(class = "brand")
+          img(class = "image", width = "25", height = "25", alt = "Snipcola Logo", src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAdVBMVEVHcExizjpizjpizjrY887Y887Y885izjpizjrY885izjqU3Xpizjpizjp21FVizjpizjpizjpizjpizjpizjpizjpizjpizjpizjpizjrY887Y887Y887Y887Y887Y887Y887Y887Y887Y887Y887Y885izjoOQRc7AAAAJXRSTlMA4iX8tx3esgUHGAJX9A7rL3ef1YxnyEq8P/brMHBLh6POPZZcwlVUTwAAA0pJREFUaN7tmNmaoyAQhaPEaARUFESNWxZ9/0ccs0zabtNjAXozn+eir9r81kLVwd1u06ZNm34IHzWk8vvOpWravboqMOJYX89Fp6UKjNhrErquqGEM56qN6LqDA2Jczp2BWgxh1AcTRnFbn9GdIdkqzRhdA6n53owBKTtuzBjDIZmve30yY+wBgQSGyTpdABW5FUaMosLrB3IFDGBcfwukOJ0O8xoVsQ0gY7F95/bcNre6LJ1Z3b6OVQsaWq9zeNpXF+eZXDyXY3x9x90EoMFYPRDXyyOzgQ15yPk7S08VbCEeh7IXbXl/+SBnWZJDBvarivsLcFM5h+5wu7+PLzLa9zSCBt8dKge60+vuXN4RLEH9IMsGtsqhKeHOobkzPJL2TyU+KPhzU2I449gMefU5fTH6DFD48npzdio6DnHYbv9WDHhBjHdqGv7fTr8YPV/HLvrZiNGzVRhePGYgsgqE0DGESg+vkKxxQYZIEjfmjMjI9gNvMYhA/VSIhlaSuTETJI8GmmFwQdb/KvTEJWk2BCeewWnhorAHCg3BpVq5xAT1qvqbS/7MZTAfHOt1hdA7lzMzFce9uVCuX3ew5raDnywASYOlmusfcmc6TaO5puKrNddIYgayRHNROTPm3QUgYbR+c6E56/FuLvTSGs0lqfWYeYIQIuXwRwjGeOxmaWKFFC3TXBGJfO9lJ0bOAnuBb0e5FIy72SxOaG4Z/PY++IEjYgjvl+iQXNJw3HGSsAeOwptLK0LPz5k7mkYQX6tsbtwk/JazLFgagSfHF8UrOKjJ8V3Bck52g4blDOaqONkNNFdMheSpUPUEia1S0oildPa9IusnRKW5Im4Bmh5z5ck1KgWzQPcsObEESIAz5SLQsItS5Y31ZVUt2CMfGNCSeCyEOCjskQ9rFDEgg0KqGMiYfjKPkTIDEd/+oGGf8JR+XFgx6AYhxg9bJLU+6PfNSEELK/92uFJVhwQK5MetNFR0KyFkbnnczHFxyA1SUiNIBlm8vtENCFmgIS+M7g0haFv56foMs0AsGMPoTpoCl65Ba4Ucaui0L1nUzaFfWHTvP1YswVsdS42y0yQWtspXMOIqKuYiHy4zSt+iPFWt8NVw06ZN/4H+ABkk6IcozmqaAAAAAElFTkSuQmCC")
+          p(class = "text") Snipcola
+        div(class = "buttons")
+          div(class = "button theme")
+            i(class = "icon")
+          a(class = "button full", aria-label = "Contact", href = "mailto:snipcola@gmail.com")
+            i(class = "icon icon-envelope")
+    div(class = "container")
+      div(class = "content")
+        div(class = "section")
+          h3(class = "label")
+            i(class = "icon icon-link")
+            p(style="margin: 0") Services
+          div(class = "links s1")
+            a(class = "link", target = "_blank", href = "https://url.snipcola.com/git")
+              i(class = "icon icon-git")
+              div(class = "info")
+                h3(class = "label") Git
+                p(class = "text") All of my open-source projects are stored here.
+            a(class = "link", target = "_blank", href = "https://url.snipcola.com/gist")
+              i(class = "icon icon-book")
+              div(class = "info")
+                h3(class = "label") Gist
+                p(class = "text") All of my open-source scripts are stored here.
+            a(class = "link", target = "_blank", href = "https://url.snipcola.com/filmhaven")
+              i(class = "icon icon-clapperboard")
+              div(class = "info")
+                h3(class = "label") FilmHaven
+                p(class = "text") Frontend to view a variety of movies & shows.
+        div(class = "section")
+          h3(class = "label")
+            i(class = "icon icon-code")
+            p(style="margin: 0") Projects
+          div(class = "links s2")
+            a(class = "link", target = "_blank", href = "https://git.snipcola.com/snipcola/Create-Roblox-TS-Script")
+              i(class = "icon icon-scroll")
+              div(class = "info")
+                h3(class = "label") Create Roblox-TS Script
+                p(class = "text") CLI tool to scaffold a project where you can compile TypeScript files to a Lua script.
+            a(class = "link", target = "_blank", href = "https://git.snipcola.com/snipcola/Roblox-AI")
+              i(class = "icon icon-robot")
+              div(class = "info")
+                h3(class = "label") Roblox AI
+                p(class = "text") Automates your Roblox character, enabling communication with others and custom functions.
+            a(class = "link", target = "_blank", href = "https://git.snipcola.com/snipcola/FilmHaven")
+              i(class = "icon icon-clapperboard")
+              div(class = "info")
+                h3(class = "label") FilmHaven
+                p(class = "text") Lightweight frontend to view and interact with a variety of movies & shows.
+            a(class = "link", target = "_blank", href = "https://git.snipcola.com/snipcola/XSpammer2")
+              i(class = "icon icon-discord")
+              div(class = "info")
+                h3(class = "label") XSpammer2
+                p(class = "text") Discord automation utility, designed to maximize your workflow.
+            a(class = "link", target = "_blank", href = "https://git.snipcola.com/snipcola/SteamCleaner")
+              i(class = "icon icon-steam")
+              div(class = "info")
+                h3(class = "label") SteamCleaner
+                p(class = "text") File and registry cleaner for the Steam Desktop Application.
+            a(class = "link", target = "_blank", href = "https://git.snipcola.com/snipcola/ProExt")
+              i(class = "icon icon-counter-strike")
+              div(class = "info")
+                h3(class = "label") ProExt
+                  span(class="notice") Archive
+                p(class = "text") Tool for Counter-Strike 2 which allows for a competitive advantage.
+        div(class = "section")
+          h3(class = "label")
+            i(class = "icon icon-user")
+            p(style="margin: 0") Socials
+          div(class = "links compact s3")
+            a(class = "link", target = "_blank", href = "https://url.snipcola.com/youtube")
+              i(class = "icon icon-youtube")
+              div(class = "info")
+                h3(class = "label") YouTube
+            a(class = "link", target = "_blank", href = "https://url.snipcola.com/discord")
+              i(class = "icon icon-discord")
+              div(class = "info")
+                h3(class = "label") Discord
+            a(class = "link", target = "_blank", href = "https://url.snipcola.com/roblox")
+              i(class = "icon icon-roblox")
+              div(class = "info")
+                h3(class = "label") Roblox
+            a(class = "link", target = "_blank", href = "https://url.snipcola.com/x")
+              i(class = "icon icon-x")
+              div(class = "info")
+                h3(class = "label") X / Twitter
+    div(class = "container")
+      div(class = "footer")
+        p(class = "copyright")
