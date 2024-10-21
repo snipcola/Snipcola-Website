@@ -173,6 +173,7 @@ html.light .header .brand .image {
   align-items: center;
   gap: 1rem !important;
   flex-direction: row !important;
+  width: calc(24.5% - 0.5rem) !important;
 }
 
 .link {
@@ -188,6 +189,10 @@ html.light .header .brand .image {
     opacity 0.2s,
     transform 0.2s;
   height: fit-content;
+}
+
+.link {
+  width: calc(33.33% - 0.5rem);
 }
 
 .link .icon {
@@ -278,17 +283,4 @@ html.light .header .brand .image {
   border-radius: 15px;
   padding: 0.25rem 0.5rem;
   box-sizing: border-box;
-}
-
-/* Specific */
-.links.s1 .link {
-  width: calc(33.33% - 0.5rem);
-}
-
-.links.s2 .link {
-  width: calc(33.33% - 0.5rem);
-}
-
-.links.s3 .link {
-  width: calc(24.5% - 0.5rem);
 }

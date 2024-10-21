@@ -74,7 +74,7 @@ function initThemeButton() {
 
 function setFooter() {
   const text = document.querySelector(".footer .copyright");
-  text.innerText = `© ${new Date().getFullYear()} Snipcola`;
+  text.innerText = `© ${new Date().getFullYear()} ${text.textContent}`;
 }
 
 // Event Listener

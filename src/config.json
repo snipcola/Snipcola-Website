@@ -1,0 +1,137 @@
+{
+  "title": "Snipcola",
+  "description": "This is my home page, containing links to the projects I've worked on.",
+  "language": "en",
+  "variables": {
+    "--primary": "#a6d189",
+    "--primary-rgb": "166, 209, 137",
+    "--col-black": "#10190a",
+    "--col-900-dark": "#232634",
+    "--col-800-dark": "#292c3c",
+    "--col-700-dark": "#303446",
+    "--col-600-dark": "#414559",
+    "--text-dark": "#e9f3e1",
+    "--col-900-light": "#eff1f5",
+    "--col-800-light": "#e6e9ef",
+    "--col-700-light": "#eff1f5",
+    "--col-600-light": "#ccd0da",
+    "--text-light": "var(--col-black)"
+  },
+  "icon": {
+    "type": "image/png",
+    "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAdVBMVEVHcExizjpizjpizjrY887Y887Y885izjpizjrY885izjqU3Xpizjpizjp21FVizjpizjpizjpizjpizjpizjpizjpizjpizjpizjpizjrY887Y887Y887Y887Y887Y887Y887Y887Y887Y887Y887Y885izjoOQRc7AAAAJXRSTlMA4iX8tx3esgUHGAJX9A7rL3ef1YxnyEq8P/brMHBLh6POPZZcwlVUTwAAA0pJREFUaN7tmNmaoyAQhaPEaARUFESNWxZ9/0ccs0zabtNjAXozn+eir9r81kLVwd1u06ZNm34IHzWk8vvOpWravboqMOJYX89Fp6UKjNhrErquqGEM56qN6LqDA2Jczp2BWgxh1AcTRnFbn9GdIdkqzRhdA6n53owBKTtuzBjDIZmve30yY+wBgQSGyTpdABW5FUaMosLrB3IFDGBcfwukOJ0O8xoVsQ0gY7F95/bcNre6LJ1Z3b6OVQsaWq9zeNpXF+eZXDyXY3x9x90EoMFYPRDXyyOzgQ15yPk7S08VbCEeh7IXbXl/+SBnWZJDBvarivsLcFM5h+5wu7+PLzLa9zSCBt8dKge60+vuXN4RLEH9IMsGtsqhKeHOobkzPJL2TyU+KPhzU2I449gMefU5fTH6DFD48npzdio6DnHYbv9WDHhBjHdqGv7fTr8YPV/HLvrZiNGzVRhePGYgsgqE0DGESg+vkKxxQYZIEjfmjMjI9gNvMYhA/VSIhlaSuTETJI8GmmFwQdb/KvTEJWk2BCeewWnhorAHCg3BpVq5xAT1qvqbS/7MZTAfHOt1hdA7lzMzFce9uVCuX3ew5raDnywASYOlmusfcmc6TaO5puKrNddIYgayRHNROTPm3QUgYbR+c6E56/FuLvTSGs0lqfWYeYIQIuXwRwjGeOxmaWKFFC3TXBGJfO9lJ0bOAnuBb0e5FIy72SxOaG4Z/PY++IEjYgjvl+iQXNJw3HGSsAeOwptLK0LPz5k7mkYQX6tsbtwk/JazLFgagSfHF8UrOKjJ8V3Bck52g4blDOaqONkNNFdMheSpUPUEia1S0oildPa9IusnRKW5Im4Bmh5z5ck1KgWzQPcsObEESIAz5SLQsItS5Y31ZVUt2CMfGNCSeCyEOCjskQ9rFDEgg0KqGMiYfjKPkTIDEd/+oGGf8JR+XFgx6AYhxg9bJLU+6PfNSEELK/92uFJVhwQK5MetNFR0KyFkbnnczHFxyA1SUiNIBlm8vtENCFmgIS+M7g0haFv56foMs0AsGMPoTpoCl65Ba4Ucaui0L1nUzaFfWHTvP1YswVsdS42y0yQWtspXMOIqKuYiHy4zSt+iPFWt8NVw06ZN/4H+ABkk6IcozmqaAAAAAElFTkSuQmCC"
+  },
+  "brand": {
+    "text": "Snipcola",
+    "icon": {
+      "label": "Snipcola Logo",
+      "width": 25,
+      "height": 25
+    },
+    "buttons": [
+      {
+        "label": "Contact",
+        "icon": "envelope",
+        "url": "mailto:snipcola@gmail.com",
+        "type": "full"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "name": "Services",
+      "icon": "link",
+      "links": [
+        {
+          "label": "Git",
+          "icon": "git",
+          "text": "All of my open-source projects are stored here.",
+          "url": "https://url.snipcola.com/git"
+        },
+        {
+          "label": "Gist",
+          "icon": "book",
+          "text": "All of my open-source scripts are stored here.",
+          "url": "https://url.snipcola.com/gist"
+        },
+        {
+          "label": "FilmHaven",
+          "icon": "clapperboard",
+          "text": "Frontend to view a variety of movies & shows.",
+          "url": "https://url.snipcola.com/filmhaven"
+        }
+      ]
+    },
+    {
+      "name": "Projects",
+      "icon": "code",
+      "links": [
+        {
+          "label": "Create Roblox-TS Script",
+          "icon": "scroll",
+          "text": "CLI tool to scaffold a project where you can compile TypeScript files to a Lua script.",
+          "url": "https://git.snipcola.com/snipcola/Create-Roblox-TS-Script"
+        },
+        {
+          "label": "Roblox AI",
+          "icon": "robot",
+          "text": "Automates your Roblox character via communication and custom functions.",
+          "url": "https://git.snipcola.com/snipcola/Roblox-AI"
+        },
+        {
+          "label": "FilmHaven",
+          "icon": "clapperboard",
+          "text": "Lightweight frontend to view and interact with a variety of movies & shows.",
+          "url": "https://git.snipcola.com/snipcola/FilmHaven"
+        },
+        {
+          "label": "XSpammer2",
+          "icon": "discord",
+          "text": "Discord automation utility, designed to maximize your workflow.",
+          "url": "https://git.snipcola.com/snipcola/XSpammer2"
+        },
+        {
+          "label": "SteamCleaner",
+          "icon": "steam",
+          "text": "File and registry cleaner for the Steam Desktop Application.",
+          "url": "https://git.snipcola.com/snipcola/SteamCleaner"
+        },
+        {
+          "label": "ProExt",
+          "icon": "counter-strike",
+          "text": "Tool for Counter-Strike 2 which allows for a competitive advantage.",
+          "url": "https://git.snipcola.com/snipcola/ProExt",
+          "notice": "Archive"
+        }
+      ]
+    },
+    {
+      "name": "Socials",
+      "icon": "user",
+      "links": [
+        {
+          "label": "YouTube",
+          "icon": "youtube",
+          "url": "https://url.snipcola.com/youtube"
+        },
+        {
+          "label": "Discord",
+          "icon": "discord",
+          "url": "https://url.snipcola.com/discord"
+        },
+        {
+          "label": "Roblox",
+          "icon": "roblox",
+          "url": "https://url.snipcola.com/roblox"
+        },
+        {
+          "label": "X / Twitter",
+          "icon": "x",
+          "url": "https://url.snipcola.com/x"
+        }
+      ],
+      "compact": true
+    }
+  ],
+  "copyright": "Snipcola"
+}
