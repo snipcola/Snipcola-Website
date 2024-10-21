@@ -30,7 +30,7 @@ function getTheme() {
 function setTheme() {
   resetTheme();
 
-  const theme = getThemeVal();
+  const theme = getThemeVal() || getTheme();
   if (theme) html.classList.add(theme);
 }
 

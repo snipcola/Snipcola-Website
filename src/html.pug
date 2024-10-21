@@ -15,7 +15,9 @@ html(lang = (config.language || "en"))
     div(class = "container")
       div(class = "header")
         div(class = "brand")
-          img(class = "image", width = config.brand.icon.width, height = config.brand.icon.height, alt = config.brand.icon.label, src = (config.brand.icon.data || config.icon.data))
+          style .header .brand .image{width: #{config.brand.icon.width}px;height: #{config.brand.icon.height}px}
+          div(class = "image")
+            img(width = config.brand.icon.width, height = config.brand.icon.height, alt = config.brand.icon.label, src = (config.brand.icon.data || config.icon.data))
           p(class = "text") #{config.brand.text}
         div(class = "buttons")
           div(class = "button theme")

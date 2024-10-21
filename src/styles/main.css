@@ -120,7 +120,7 @@ body {
 }
 
 html.light .header .brand .image {
-  background-color: var(--col-black);
+  background-color: var(--col-black) !important;
 }
 
 .header .buttons {

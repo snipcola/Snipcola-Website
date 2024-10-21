@@ -24,10 +24,6 @@ html.dark {
     --col-600: var(--col-600-light);
     --text: var(--text-light);
   }
-
-  .header .brand .image {
-    background-color: var(--col-black) !important;
-  }
 }
 
 html.light {
