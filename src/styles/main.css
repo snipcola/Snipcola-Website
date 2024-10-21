@@ -168,14 +168,6 @@ html.light .header .brand .image {
   gap: 0.75rem;
 }
 
-.links.compact .link {
-  justify-content: center;
-  align-items: center;
-  gap: 1rem !important;
-  flex-direction: row !important;
-  width: calc(24.5% - 0.5rem) !important;
-}
-
 .link {
   display: flex;
   gap: 0.25rem;
@@ -189,6 +181,14 @@ html.light .header .brand .image {
     opacity 0.2s,
     transform 0.2s;
   height: fit-content;
+}
+
+.links.compact .link {
+  justify-content: center;
+  align-items: center;
+  gap: 1rem !important;
+  flex-direction: row !important;
+  width: calc(24.5% - 0.5rem) !important;
 }
 
 .link {
@@ -257,7 +257,8 @@ html.light .header .brand .image {
     flex-direction: column;
   }
 
-  .links .link {
+  .links .link,
+  .links.compact .link {
     width: 100% !important;
   }
 
