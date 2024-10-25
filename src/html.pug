@@ -35,13 +35,13 @@ html(lang = (config.language || "en"))
             div(class = section.compact ? "links compact" : "links")
               for link in section.links
                 a(class = "link", href = link.url, target = (link.newTab === undefined ? true : link.newTab) ? "_blank" : "_self")
-                  i(class = `icon icon-${link.icon}`)
-                  div(class = "info")
-                    h3(class="label") #{link.label}
-                      if link.notice
-                        span(class="notice") #{link.notice}
-                    if link.text
-                      p(class = "text") #{link.text}
+                  h3(class="label")
+                    i(class = `icon icon-${link.icon}`)
+                    span #{link.label}
+                    if link.notice
+                      span(class="notice") #{link.notice}
+                  if link.text
+                    p(class = "text") #{link.text}
     div(class = "container")
       div(class = "footer")
         p(class = "copyright") #{config.copyright}

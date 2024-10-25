@@ -3,14 +3,16 @@
   "description": "This is my home page, containing links to the projects I've worked on.",
   "language": "en",
   "variables": {
-    "--primary": "#a6d189",
-    "--primary-rgb": "166, 209, 137",
+    "--primary-dark": "#a6d189",
+    "--primary-rgb-dark": "166, 209, 137",
     "--col-black": "#10190a",
     "--col-900-dark": "#232634",
     "--col-800-dark": "#292c3c",
     "--col-700-dark": "#303446",
     "--col-600-dark": "#414559",
     "--text-dark": "#e9f3e1",
+    "--primary-light": "#40a02b",
+    "--primary-rgb-light": "64, 160, 43",
     "--col-900-light": "#eff1f5",
     "--col-800-light": "#e6e9ef",
     "--col-700-light": "#eff1f5",
@@ -126,7 +128,7 @@
           "url": "https://url.snipcola.com/roblox"
         },
         {
-          "label": "X / Twitter",
+          "label": "X",
           "icon": "x",
           "url": "https://url.snipcola.com/x"
         }
