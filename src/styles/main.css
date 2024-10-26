@@ -156,8 +156,6 @@ html.light .header .brand .image {
   align-items: center;
   margin: 0;
   width: fit-content;
-  border-bottom: 2px solid var(--text);
-  padding-bottom: 0.5rem;
 }
 
 .section .label .icon {
