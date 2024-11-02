@@ -14,13 +14,14 @@
 [class="icon"],
 [class^="icon-"],
 [class*=" icon-"] {
-  display: inline-block;
+  display: block;
   font-family: "Iconly" !important;
   font-weight: 400;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
   line-height: 1 !important;
+  font-size: 12px !important;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
