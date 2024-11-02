@@ -34,6 +34,10 @@ body {
   text-decoration: none;
 }
 
+.button .icon {
+  font-size: 1rem !important;
+}
+
 .button.full > * {
   color: var(--col-black);
 }
@@ -159,6 +163,7 @@ html.light .header .brand .image {
 }
 
 .section .label .icon {
+  font-size: 1rem !important;
   opacity: 75%;
 }
 
@@ -200,7 +205,7 @@ html.light .header .brand .image {
 }
 
 .link .icon {
-  font-size: 1.25rem;
+  font-size: 18px !important;
 }
 
 .link .notice {
