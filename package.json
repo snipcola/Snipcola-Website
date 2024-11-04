@@ -7,7 +7,7 @@
     "build": "webpack --config ./build/config.production.js",
     "dev": "webpack --config ./build/config.development.js",
     "release": "git push origin main:release",
-    "clean": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json,css,html,rs}\""
+    "format": "prettier --write \"build/**/*\" \"src/**/*\""
   },
   "devDependencies": {
     "clean-webpack-plugin": "4.0.0",
