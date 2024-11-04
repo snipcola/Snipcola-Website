@@ -1,7 +1,8 @@
-const path = require("path");
+import path from "path";
 
-module.exports = {
-  src: path.resolve(__dirname, "..", "src"),
-  dist: path.resolve(__dirname, "..", "dist"),
-  config: path.resolve(__dirname, "..", "src", "config.json"),
-};
+const __filename = new URL(import.meta.url).pathname;
+const __dirname = path.dirname(__filename);
+
+export const src = path.resolve(__dirname, "..", "src");
+export const dist = path.resolve(__dirname, "..", "dist");
+export const config = path.resolve(__dirname, "..", "src", "config.json");
