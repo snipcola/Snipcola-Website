@@ -48,13 +48,13 @@
         {
           "label": "Git",
           "icon": "git",
-          "text": "All of my open-source projects are stored here.",
+          "text": "Git server, contains open-source projects I've worked on.",
           "url": "https://url.snipcola.com/git"
         },
         {
           "label": "Gist",
           "icon": "book",
-          "text": "All of my open-source scripts are stored here.",
+          "text": "Gist server, contains short snippets, or code, such as configs.",
           "url": "https://url.snipcola.com/gist"
         },
         {
