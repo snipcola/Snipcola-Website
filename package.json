@@ -6,8 +6,8 @@
   "scripts": {
     "build": "webpack --config ./build/config.production.js",
     "dev": "webpack --config ./build/config.development.js",
-    "release": "docker buildx build --platform linux/amd64,linux/arm64 -t git.snipcola.com/snipcola/snipcola-website:latest --push .",
-    "format": "prettier --write \"build/**/*\" \"src/**/*\""
+    "format": "prettier --write \"build/**/*\" \"src/**/*\"",
+    "release": "git push origin main:release --force"
   },
   "devDependencies": {
     "@webdiscus/pug-loader": "2.11.0",
