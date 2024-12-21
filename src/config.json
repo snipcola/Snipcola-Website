@@ -112,14 +112,14 @@
       "icon": "user",
       "links": [
         {
+          "label": "Session",
+          "icon": "session",
+          "url": "https://url.snipcola.com/session"
+        },
+        {
           "label": "YouTube",
           "icon": "youtube",
           "url": "https://url.snipcola.com/youtube"
-        },
-        {
-          "label": "Discord",
-          "icon": "discord",
-          "url": "https://url.snipcola.com/discord"
         },
         {
           "label": "Roblox",
