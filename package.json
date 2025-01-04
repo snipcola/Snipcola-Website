@@ -1,7 +1,7 @@
 {
   "name": "snipcola-website",
   "author": "Snipcola",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -13,7 +13,7 @@
   "devDependencies": {
     "@webdiscus/pug-loader": "2.11.0",
     "clean-webpack-plugin": "4.0.0",
-    "concurrently": "9.1.0",
+    "concurrently": "9.1.2",
     "css-loader": "7.1.2",
     "css-minimizer-webpack-plugin": "7.0.0",
     "html-webpack-plugin": "5.6.3",
