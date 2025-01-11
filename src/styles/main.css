@@ -153,7 +153,8 @@ html.light .header .brand .image {
   gap: 1rem;
   margin-top: 1.5rem !important;
   box-sizing: border-box;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .section > .label {
@@ -192,7 +193,7 @@ html.light .header .brand .image {
     opacity 0.2s,
     transform 0.2s;
   height: fit-content;
-  max-width: 25rem;
+  max-width: 100%;
 }
 
 .links.compact .link {
@@ -200,11 +201,11 @@ html.light .header .brand .image {
   align-items: center;
   gap: 1rem !important;
   flex-direction: row !important;
-  width: calc(24.5% - 0.5rem) !important;
+  width: calc(100% / 4 - 2rem / 3) !important;
 }
 
 .link {
-  width: calc(33.33% - 0.5rem);
+  width: calc(100% / 3 - 1rem / 2);
 }
 
 .link .icon {
