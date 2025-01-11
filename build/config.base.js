@@ -1,10 +1,11 @@
-import { src, dist, config } from "./paths.js";
+import { src, out, config } from "./paths.js";
 import path from "path";
 import fs from "fs";
 
 import { CleanWebpackPlugin } from "clean-webpack-plugin";
 import RemoveEmptyScriptsPlugin from "webpack-remove-empty-scripts";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import UglifyJsPlugin from "uglifyjs-webpack-plugin";
 import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
@@ -15,7 +16,7 @@ export default {
     config: path.resolve(src, "config.json"),
   },
   output: {
-    path: dist,
+    path: out,
     filename: "[contenthash].js",
     publicPath: "",
   },
@@ -32,7 +33,17 @@ export default {
     ],
   },
   optimization: {
-    minimizer: ["...", new CssMinimizerPlugin()],
+    minimizer: [
+      "...",
+      new UglifyJsPlugin({
+        uglifyOptions: {
+          output: {
+            comments: false,
+          },
+        },
+      }),
+      new CssMinimizerPlugin(),
+    ],
   },
   plugins: [
     new CleanWebpackPlugin(),
