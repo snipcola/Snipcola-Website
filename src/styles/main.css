@@ -47,7 +47,7 @@ html.light .button.full > * {
 }
 
 .button:hover {
-  border-radius: 5rem;
+  border-radius: 10px;
   transform: scale(0.85);
   background-color: var(--col-600);
   opacity: 75%;
@@ -66,7 +66,7 @@ html.light .button.full > * {
   align-items: center;
   gap: 0.75rem;
   background-color: var(--primary);
-  border-radius: 5rem;
+  border-radius: 10px;
   width: fit-content;
   height: fit-content;
 }
@@ -106,7 +106,7 @@ html.light .button.full > * {
   justify-content: space-between;
   gap: 2rem;
   padding: 0.5rem 0;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .header .brand {
@@ -124,9 +124,9 @@ html.light .button.full > * {
 }
 
 .header .brand .image {
-  background-color: rgb(var(--primary-rgb), 0.1);
-  border-radius: 50%;
-  padding: 0.4rem;
+  background-color: rgb(var(--primary-rgb), 0.05);
+  border-radius: 5px;
+  padding: 0.25rem;
 }
 
 html.light .header .brand .image {
@@ -152,10 +152,8 @@ html.light .header .brand .image {
   flex-direction: column;
   gap: 1rem;
   margin-top: 1.5rem !important;
-  background-color: var(--col-800);
-  border-radius: 15px;
   box-sizing: border-box;
-  padding: 1.5rem;
+  padding: 0.5rem;
 }
 
 .section > .label {
@@ -164,6 +162,7 @@ html.light .header .brand .image {
   align-items: center;
   margin: 0;
   width: fit-content;
+  align-self: center;
 }
 
 .section .label .icon {
@@ -186,7 +185,7 @@ html.light .header .brand .image {
   flex-direction: column;
   text-decoration: none;
   background-color: var(--col-700);
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 1rem;
   box-sizing: border-box;
   transition:
@@ -215,7 +214,7 @@ html.light .header .brand .image {
 .link .notice {
   background-color: var(--primary);
   color: var(--col-black);
-  border-radius: 15px;
+  border-radius: 2.5px;
   font-size: 0.75rem;
   padding: 0.15rem 0.5rem;
   box-sizing: border-box;
@@ -289,7 +288,7 @@ html.light .link .notice {
   font-weight: 500;
   background-color: var(--primary);
   color: var(--col-black);
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 0.25rem 0.5rem;
   box-sizing: border-box;
 }
