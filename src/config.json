@@ -88,12 +88,6 @@
           "url": "https://git.snipcola.com/snipcola/FilmHaven"
         },
         {
-          "label": "XSpammer2",
-          "icon": "discord",
-          "text": "Discord automation utility, designed to maximize your workflow.",
-          "url": "https://git.snipcola.com/snipcola/XSpammer2"
-        },
-        {
           "label": "SteamCleaner",
           "icon": "steam",
           "text": "File and registry cleaner for the Steam Desktop Application.",
@@ -104,6 +98,13 @@
           "icon": "counter-strike",
           "text": "Tool for Counter-Strike 2 which allows for a competitive advantage.",
           "url": "https://git.snipcola.com/snipcola/ProExt"
+        },
+        {
+          "label": "XSpammer2",
+          "icon": "discord",
+          "text": "Discord automation utility, designed to maximize your workflow.",
+          "url": "https://git.snipcola.com/snipcola/XSpammer2",
+          "notice": "Archive"
         }
       ]
     },
@@ -125,11 +126,6 @@
           "label": "Roblox",
           "icon": "roblox",
           "url": "https://url.snipcola.com/roblox"
-        },
-        {
-          "label": "X",
-          "icon": "x",
-          "url": "https://url.snipcola.com/x"
         }
       ],
       "compact": true

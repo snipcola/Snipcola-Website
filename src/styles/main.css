@@ -201,7 +201,7 @@ html.light .header .brand .image {
   align-items: center;
   gap: 1rem !important;
   flex-direction: row !important;
-  width: calc(100% / 4 - 2rem / 3) !important;
+  width: calc(100% / 3 - 1rem / 2) !important;
 }
 
 .link {
