@@ -97,7 +97,8 @@
           "label": "ProExt",
           "icon": "counter-strike",
           "text": "Tool for Counter-Strike 2 which allows for a competitive advantage.",
-          "url": "https://git.snipcola.com/snipcola/ProExt"
+          "url": "https://git.snipcola.com/snipcola/ProExt",
+          "notice": "Archive"
         },
         {
           "label": "XSpammer2",
