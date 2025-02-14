@@ -88,16 +88,17 @@
           "url": "https://git.snipcola.com/snipcola/FilmHaven"
         },
         {
-          "label": "SteamCleaner",
-          "icon": "steam",
-          "text": "File and registry cleaner for the Steam Desktop Application.",
-          "url": "https://git.snipcola.com/snipcola/SteamCleaner"
-        },
-        {
           "label": "ProExt",
           "icon": "counter-strike",
           "text": "Tool for Counter-Strike 2 which allows for a competitive advantage.",
           "url": "https://git.snipcola.com/snipcola/ProExt",
+          "notice": "Archive"
+        },
+        {
+          "label": "SteamCleaner",
+          "icon": "steam",
+          "text": "File and registry cleaner for the Steam Desktop Application.",
+          "url": "https://git.snipcola.com/snipcola/SteamCleaner",
           "notice": "Archive"
         },
         {
