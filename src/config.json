@@ -76,16 +76,17 @@
           "url": "https://git.snipcola.com/snipcola/Create-Roblox-TS-Script"
         },
         {
-          "label": "Roblox AI",
-          "icon": "robot",
-          "text": "Automates your Roblox character via communication and custom functions.",
-          "url": "https://git.snipcola.com/snipcola/Roblox-AI"
-        },
-        {
           "label": "FilmHaven",
           "icon": "clapperboard",
           "text": "Lightweight frontend to view and interact with a variety of movies & shows.",
           "url": "https://git.snipcola.com/snipcola/FilmHaven"
+        },
+        {
+          "label": "Roblox AI",
+          "icon": "robot",
+          "text": "Automates your Roblox character via communication and custom functions.",
+          "url": "https://git.snipcola.com/snipcola/Roblox-AI",
+          "notice": "Archive"
         },
         {
           "label": "ProExt",
