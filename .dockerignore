@@ -1,5 +1,12 @@
 node_modules
 package-lock.json
 
-/out
-/README.md
+.dockerignore
+dockerfile
+
+.git
+.gitignore
+.gitea
+
+out
+README.md
