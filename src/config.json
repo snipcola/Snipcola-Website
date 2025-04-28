@@ -73,40 +73,40 @@
           "label": "Create Roblox-TS Script",
           "icon": "scroll",
           "text": "CLI tool to scaffold a project where you can compile TypeScript files to a Lua script.",
-          "url": "https://git.snipcola.com/snipcola/Create-Roblox-TS-Script"
+          "url": "https://code.snipcola.com/snipcola/Create-Roblox-TS-Script"
         },
         {
           "label": "FilmHaven",
           "icon": "clapperboard",
           "text": "Lightweight frontend to view and interact with a variety of movies & shows.",
-          "url": "https://git.snipcola.com/snipcola/FilmHaven"
+          "url": "https://code.snipcola.com/snipcola/FilmHaven"
         },
         {
           "label": "Roblox AI",
           "icon": "robot",
           "text": "Automates your Roblox character via communication and custom functions.",
-          "url": "https://git.snipcola.com/snipcola/Roblox-AI",
+          "url": "https://code.snipcola.com/snipcola/Roblox-AI",
           "notice": "Archive"
         },
         {
           "label": "ProExt",
           "icon": "counter-strike",
           "text": "Tool for Counter-Strike 2 which allows for a competitive advantage.",
-          "url": "https://git.snipcola.com/snipcola/ProExt",
+          "url": "https://code.snipcola.com/snipcola/ProExt",
           "notice": "Archive"
         },
         {
           "label": "SteamCleaner",
           "icon": "steam",
           "text": "File and registry cleaner for the Steam Desktop Application.",
-          "url": "https://git.snipcola.com/snipcola/SteamCleaner",
+          "url": "https://code.snipcola.com/snipcola/SteamCleaner",
           "notice": "Archive"
         },
         {
           "label": "XSpammer2",
           "icon": "discord",
           "text": "Discord automation utility, designed to maximize your workflow.",
-          "url": "https://git.snipcola.com/snipcola/XSpammer2",
+          "url": "https://code.snipcola.com/snipcola/XSpammer2",
           "notice": "Archive"
         }
       ]
