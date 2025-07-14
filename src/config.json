@@ -70,23 +70,22 @@
       "icon": "code",
       "links": [
         {
-          "label": "Create Roblox-TS Script",
-          "icon": "scroll",
-          "text": "CLI tool to scaffold a project where you can compile TypeScript files to a Lua script.",
-          "url": "https://code.snipcola.com/snipcola/Create-Roblox-TS-Script"
-        },
-        {
           "label": "FilmHaven",
           "icon": "clapperboard",
           "text": "Lightweight frontend to view and interact with a variety of movies & shows.",
           "url": "https://code.snipcola.com/snipcola/FilmHaven"
         },
         {
+          "label": "Create Roblox-TS Script",
+          "icon": "scroll",
+          "text": "CLI tool to scaffold a project where you can compile TypeScript files to a Lua script.",
+          "url": "https://code.snipcola.com/snipcola/Create-Roblox-TS-Script"
+        },
+        {
           "label": "Roblox AI",
           "icon": "robot",
           "text": "Automates your Roblox character via communication and custom functions.",
-          "url": "https://code.snipcola.com/snipcola/Roblox-AI",
-          "notice": "Archive"
+          "url": "https://code.snipcola.com/snipcola/Roblox-AI"
         },
         {
           "label": "ProExt",
