@@ -1,7 +1,7 @@
 {
   "name": "snipcola-website",
   "author": "Snipcola",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -24,8 +24,8 @@
     "webpack-remove-empty-scripts": "1.1.1"
   },
   "devDependencies": {
-    "concurrently": "9.2.0",
+    "concurrently": "9.2.1",
     "prettier": "3.6.2",
-    "serve": "14.2.4"
+    "serve": "14.2.5"
   }
 }
