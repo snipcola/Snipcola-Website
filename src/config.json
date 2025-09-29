@@ -3,6 +3,7 @@
   "description": "This is my home page, containing links to the projects I've worked on.",
   "language": "en",
   "variables": {
+    "--border-radius": "0.2rem",
     "--primary-dark": "#a6d189",
     "--primary-rgb-dark": "166, 209, 137",
     "--col-black": "#141613",

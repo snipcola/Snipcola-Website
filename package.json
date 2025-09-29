@@ -1,7 +1,7 @@
 {
   "name": "snipcola-website",
   "author": "Snipcola",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -18,7 +18,7 @@
     "html-webpack-plugin": "5.6.4",
     "mini-css-extract-plugin": "2.9.4",
     "terser-webpack-plugin": "5.3.14",
-    "webpack": "5.101.3",
+    "webpack": "5.102.0",
     "webpack-cli": "6.0.1",
     "webpack-merge": "6.0.1",
     "webpack-remove-empty-scripts": "1.1.1"

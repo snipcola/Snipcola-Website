@@ -27,38 +27,38 @@ body {
   padding: 0.8rem;
   cursor: pointer;
   transition:
-    transform 0.2s,
-    opacity 0.2s;
+    transform 0.15s,
+    opacity 0.15s;
   user-select: none;
   -webkit-user-drag: none;
   text-decoration: none;
+  border-radius: var(--border-radius);
 }
 
 .button .icon {
   font-size: 1rem !important;
 }
 
-.button.full > * {
+.button.full>* {
   color: var(--col-black);
 }
 
-html.light .button.full > * {
+html.light .button.full>* {
   color: var(--col-900);
 }
 
 .button:hover {
-  border-radius: 10px;
-  transform: scale(0.85);
+  transform: scale(0.95);
   background-color: var(--col-600);
-  opacity: 75%;
+  opacity: 85%;
 }
 
 .button:active {
   transition:
     transform 0.1s,
     opacity 0.1s;
-  opacity: 90%;
-  transform: scale(1.02);
+  opacity: 95%;
+  transform: scale(1);
 }
 
 .button.full {
@@ -66,17 +66,9 @@ html.light .button.full > * {
   align-items: center;
   gap: 0.75rem;
   background-color: var(--primary);
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   width: fit-content;
   height: fit-content;
-}
-
-.button.full:hover {
-  transform: scale(0.95);
-}
-
-.button.full:active {
-  transform: scale(1.02);
 }
 
 /* Container */
@@ -89,7 +81,7 @@ html.light .button.full > * {
   padding-right: 1.5rem;
 }
 
-.container > div {
+.container>div {
   width: 100%;
   max-width: 80rem;
   box-sizing: border-box;
@@ -106,7 +98,7 @@ html.light .button.full > * {
   justify-content: space-between;
   gap: 2rem;
   padding: 0.5rem 0;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
 }
 
 .header .brand {
@@ -125,8 +117,8 @@ html.light .button.full > * {
 
 .header .brand .image {
   background-color: rgb(var(--primary-rgb), 0.05);
-  border-radius: 5px;
-  padding: 0.25rem;
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
 }
 
 html.light .header .brand .image {
@@ -157,7 +149,7 @@ html.light .header .brand .image {
   padding-bottom: 0.5rem;
 }
 
-.section > .label {
+.section>.label {
   display: flex;
   gap: 0.5rem;
   align-items: center;
@@ -186,12 +178,12 @@ html.light .header .brand .image {
   flex-direction: column;
   text-decoration: none;
   background-color: var(--col-700);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   padding: 1rem;
   box-sizing: border-box;
   transition:
-    opacity 0.2s,
-    transform 0.2s;
+    opacity 0.15s,
+    transform 0.15s;
   height: fit-content;
   max-width: 100%;
 }
@@ -215,7 +207,7 @@ html.light .header .brand .image {
 .link .notice {
   background-color: var(--primary);
   color: var(--col-black);
-  border-radius: 2.5px;
+  border-radius: var(--border-radius);
   font-size: 0.75rem;
   padding: 0.15rem 0.5rem;
   box-sizing: border-box;
@@ -241,21 +233,21 @@ html.light .link .notice {
   font-size: 0.95rem;
 }
 
-.link > * {
+.link>* {
   margin: 0;
 }
 
 .link:hover {
-  opacity: 75%;
-  transform: scale(0.975);
+  opacity: 85%;
+  transform: scale(0.98);
 }
 
 .link:active {
   transition:
     opacity 0.1s,
     transform 0.1s;
-  opacity: 100%;
-  transform: scale(1.025);
+  opacity: 95%;
+  transform: scale(1);
 }
 
 /* Responsive */
@@ -289,7 +281,7 @@ html.light .link .notice {
   font-weight: 500;
   background-color: var(--primary);
   color: var(--col-black);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   padding: 0.25rem 0.5rem;
   box-sizing: border-box;
 }
