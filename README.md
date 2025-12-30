@@ -1,1 +1,1 @@
-Source code for [snipcola.com](https://snipcola.com).
+Source code for [snipcola.st](https://snipcola.st).

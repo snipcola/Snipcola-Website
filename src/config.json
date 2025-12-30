@@ -50,19 +50,19 @@
           "label": "Code",
           "icon": "git",
           "text": "Open-source projects I've worked on; also hosts project releases, Docker images, and NPM packages.",
-          "url": "https://code.snipcola.com"
+          "url": "https://code.snipcola.st"
         },
         {
           "label": "Snippets",
           "icon": "book",
           "text": "Collection of text primarily including code and configuration files.",
-          "url": "https://snippets.snipcola.com"
+          "url": "https://snippets.snipcola.st"
         },
         {
           "label": "FilmHaven",
           "icon": "clapperboard",
           "text": "Frontend to view a variety of movies & shows, use an ad-blocker for an optimal experience.",
-          "url": "https://links.snipcola.com/filmhaven"
+          "url": "https://links.snipcola.st/filmhaven"
         }
       ]
     },
@@ -74,45 +74,45 @@
           "label": "FilmHaven",
           "icon": "clapperboard",
           "text": "Lightweight frontend to view and interact with a variety of movies & shows.",
-          "url": "https://code.snipcola.com/snipcola/FilmHaven"
+          "url": "https://code.snipcola.st/snipcola/FilmHaven"
         },
         {
           "label": "Create Roblox-TS Script",
           "icon": "scroll",
           "text": "CLI tool to scaffold a project where you can compile TypeScript files to a Lua script.",
-          "url": "https://code.snipcola.com/snipcola/Create-Roblox-TS-Script"
+          "url": "https://code.snipcola.st/snipcola/Create-Roblox-TS-Script"
         },
         {
           "label": "Roblox AI",
           "icon": "robot",
           "text": "Automates your Roblox character via communication and custom functions.",
-          "url": "https://code.snipcola.com/snipcola/Roblox-AI"
+          "url": "https://code.snipcola.st/snipcola/Roblox-AI"
         },
         {
           "label": "Discord Keep Alive",
           "icon": "discord",
           "text": "Keeps your discord account online, and optionally sets a custom status or activity.",
-          "url": "https://code.snipcola.com/snipcola/Discord-Keep-Alive"
+          "url": "https://code.snipcola.st/snipcola/Discord-Keep-Alive"
         },
         {
           "label": "ProExt",
           "icon": "counter-strike",
           "text": "Tool for Counter-Strike 2 which allows for a competitive advantage.",
-          "url": "https://code.snipcola.com/snipcola/ProExt",
+          "url": "https://code.snipcola.st/snipcola/ProExt",
           "notice": "Archive"
         },
         {
           "label": "SteamCleaner",
           "icon": "steam",
           "text": "File and registry cleaner for the Steam Desktop Application.",
-          "url": "https://code.snipcola.com/snipcola/SteamCleaner",
+          "url": "https://code.snipcola.st/snipcola/SteamCleaner",
           "notice": "Archive"
         },
         {
           "label": "XSpammer2",
           "icon": "discord",
           "text": "Discord automation utility with an easy-to-use, modern GUI, and multiple functions.",
-          "url": "https://code.snipcola.com/snipcola/XSpammer2",
+          "url": "https://code.snipcola.st/snipcola/XSpammer2",
           "notice": "Archive"
         }
       ]
@@ -124,12 +124,12 @@
         {
           "label": "Stoat",
           "icon": "stoat",
-          "url": "https://links.snipcola.com/stoat"
+          "url": "https://links.snipcola.st/stoat"
         },
         {
           "label": "Session",
           "icon": "session",
-          "url": "https://links.snipcola.com/session"
+          "url": "https://links.snipcola.st/session"
         }
       ],
       "compact": true
