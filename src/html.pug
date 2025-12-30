@@ -6,12 +6,12 @@ html(lang = (config.language || "en"))
     meta(charset = "UTF-8")
     meta(name = "viewport", content = "width=device-width, initial-scale=1.0")
     link(rel = "icon", type = config.icon.type, href = config.icon.data)
+
     style :root{#{Object.entries(config.variables).map(([name, value]) => `${name}:${value}`).join(";")}}
-    each cssFile in htmlWebpackPlugin.files.css
-      style !{compilation.assets[cssFile.substr(htmlWebpackPlugin.files.publicPath.length)].source()}
+    style !{cssContent}
   body
-    each jsFile in htmlWebpackPlugin.files.js
-      script !{compilation.assets[jsFile.substr(htmlWebpackPlugin.files.publicPath.length)].source()}
+    script !{jsContent}
+
     div(class = "container")
       div(class = "header")
         div(class = "brand")
@@ -35,13 +35,14 @@ html(lang = (config.language || "en"))
             div(class = section.compact ? "links compact" : "links")
               for link in section.links
                 a(class = "link", href = link.url, target = (link.newTab === undefined ? true : link.newTab) ? "_blank" : "_self")
-                  h3(class="label")
-                    i(class = `icon icon-${link.icon}`)
-                    span #{link.label}
-                    if link.notice
-                      span(class="notice") #{link.notice}
-                  if link.text
-                    p(class = "text") #{link.text}
+                  div(class = "link-content")
+                    h3(class="label")
+                      i(class = `icon icon-${link.icon}`)
+                      span #{link.label}
+                      if link.notice
+                        span(class="notice") #{link.notice}
+                    if link.text
+                      p(class = "text") #{link.text}
     div(class = "container")
       div(class = "footer")
         p(class = "copyright") #{config.copyright}

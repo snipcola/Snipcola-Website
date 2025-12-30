@@ -49,19 +49,19 @@
         {
           "label": "Code",
           "icon": "git",
-          "text": "Open-source projects I've worked on.",
+          "text": "Open-source projects I've worked on; also hosts project releases, Docker images, and NPM packages.",
           "url": "https://code.snipcola.com"
         },
         {
           "label": "Snippets",
           "icon": "book",
-          "text": "Short snippets, or code, such as configs.",
+          "text": "Collection of text primarily including code and configuration files.",
           "url": "https://snippets.snipcola.com"
         },
         {
           "label": "FilmHaven",
           "icon": "clapperboard",
-          "text": "Frontend to view a variety of movies & shows.",
+          "text": "Frontend to view a variety of movies & shows, use an ad-blocker for an optimal experience.",
           "url": "https://links.snipcola.com/filmhaven"
         }
       ]
@@ -89,6 +89,12 @@
           "url": "https://code.snipcola.com/snipcola/Roblox-AI"
         },
         {
+          "label": "Discord Keep Alive",
+          "icon": "discord",
+          "text": "Keeps your discord account online, and optionally sets a custom status or activity.",
+          "url": "https://code.snipcola.com/snipcola/Discord-Keep-Alive"
+        },
+        {
           "label": "ProExt",
           "icon": "counter-strike",
           "text": "Tool for Counter-Strike 2 which allows for a competitive advantage.",
@@ -105,7 +111,7 @@
         {
           "label": "XSpammer2",
           "icon": "discord",
-          "text": "Discord automation utility, designed to maximize your workflow.",
+          "text": "Discord automation utility with an easy-to-use, modern GUI, and multiple functions.",
           "url": "https://code.snipcola.com/snipcola/XSpammer2",
           "notice": "Archive"
         }
@@ -116,19 +122,14 @@
       "icon": "user",
       "links": [
         {
+          "label": "Stoat",
+          "icon": "stoat",
+          "url": "https://links.snipcola.com/stoat"
+        },
+        {
           "label": "Session",
           "icon": "session",
           "url": "https://links.snipcola.com/session"
-        },
-        {
-          "label": "YouTube",
-          "icon": "youtube",
-          "url": "https://links.snipcola.com/youtube"
-        },
-        {
-          "label": "Roblox",
-          "icon": "roblox",
-          "url": "https://links.snipcola.com/roblox"
         }
       ],
       "compact": true
