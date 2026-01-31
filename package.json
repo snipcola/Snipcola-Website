@@ -1,13 +1,13 @@
 {
   "name": "snipcola-website",
   "author": "Snipcola",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "MIT",
   "type": "module",
   "scripts": {
     "build": "bun run scripts/build.ts",
     "dev": "bun run scripts/dev.ts",
-    "format": "prettier --write \"build/**/*.ts\" \"{src,scripts}/**/*.{ts,json,css}\"",
+    "format": "prettier --write \"{src,scripts}/**/*.{ts,json,css}\"",
     "release": "git push origin main:release --force"
   },
   "dependencies": {

@@ -1,6 +1,6 @@
 import { watch, type WatchEventType } from "fs";
 import open from "open";
-import { config, build, serve } from "./functions";
+import { config, build, serve } from "./utils/functions";
 
 const success: boolean = await build(true);
 if (!success) console.error("Initial build failed");

@@ -3,7 +3,7 @@ import path from "path";
 import { rm } from "fs/promises";
 import pug from "pug";
 import { minify } from "html-minifier-terser";
-import { type SiteConfig, SiteConfigSchema } from "./schema";
+import { type SiteConfig, SiteConfigSchema } from "../config/schema";
 import z, { ZodError } from "zod";
 
 type ConfigDev = {
@@ -22,18 +22,15 @@ type Config = {
   dev: ConfigDev;
 };
 
+const rootDirectory: string = path.resolve(import.meta.dirname, "..", "..");
 export const config: Config = {
-  src: path.resolve(import.meta.dirname, "..", "src"),
-  out: path.resolve(import.meta.dirname, "..", "out"),
-  scripts: [
-    path.resolve(import.meta.dirname, "..", "src", "scripts", "main.ts"),
-  ],
-  styles: [
-    path.resolve(import.meta.dirname, "..", "src", "styles", "main.css"),
-  ],
-  config: path.resolve(import.meta.dirname, "..", "src", "config.json"),
-  pug: path.resolve(import.meta.dirname, "..", "src", "html.pug"),
-  result: path.resolve(import.meta.dirname, "..", "out", "index.html"),
+  src: path.resolve(rootDirectory, "src"),
+  out: path.resolve(rootDirectory, "out"),
+  scripts: [path.resolve(rootDirectory, "src", "scripts", "main.ts")],
+  styles: [path.resolve(rootDirectory, "src", "styles", "main.css")],
+  config: path.resolve(rootDirectory, "src", "config.json"),
+  pug: path.resolve(rootDirectory, "src", "html.pug"),
+  result: path.resolve(rootDirectory, "out", "index.html"),
   dev: {
     port: 5000,
     openTimeout: 1000,
