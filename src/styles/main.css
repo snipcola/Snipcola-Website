@@ -97,7 +97,7 @@ html.light .button.full > * {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem !important;
   border-radius: var(--border-radius);
 }
 
@@ -155,7 +155,6 @@ html.light .header .brand .image {
   align-items: center;
   margin: 0;
   width: fit-content;
-  align-self: center;
 }
 
 .section .label .icon {
@@ -183,12 +182,10 @@ html.light .header .brand .image {
   transition:
     opacity 0.15s,
     transform 0.15s;
-  height: fit-content;
+  height: auto;
   max-width: 100%;
-  justify-content: center;
-  align-items: center;
   flex-grow: 1;
-  flex-basis: calc(100% / 3 - 1rem);
+  flex-basis: calc((100% - (1rem * (var(--columns) - 1))) / var(--columns));
 }
 
 .link .link-content {
@@ -198,13 +195,6 @@ html.light .header .brand .image {
   text-align: left;
   width: 100%;
   max-width: fit-content;
-}
-
-.links.compact .link {
-  justify-content: center;
-  align-items: center;
-  gap: 1rem !important;
-  flex-basis: calc(100% / 2 - 1rem);
 }
 
 .link .icon {
@@ -263,12 +253,10 @@ html.light .link .notice {
     flex-direction: column;
   }
 
-  .links .link,
-  .links.compact .link {
+  .links .link {
     max-width: 100% !important;
     width: 100% !important;
-    justify-content: left !important;
-    align-items: start !important;
+    flex-basis: 100% !important;
   }
 
   .banner {
@@ -280,10 +268,10 @@ html.light .link .notice {
 /* Footer */
 .footer {
   display: flex;
-  justify-content: center;
   text-align: center;
   margin-top: 1rem !important;
   margin-bottom: 1rem !important;
+  padding: 0 !important;
 }
 
 .footer .copyright {
@@ -291,7 +279,7 @@ html.light .link .notice {
   background-color: var(--primary);
   color: var(--col-black);
   border-radius: var(--border-radius);
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 0.75rem;
   box-sizing: border-box;
 }
 

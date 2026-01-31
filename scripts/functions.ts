@@ -1,14 +1,32 @@
-import Bun from "bun";
+import Bun, { type BuildOutput, type BunFile, type Server } from "bun";
 import path from "path";
 import { rm } from "fs/promises";
 import pug from "pug";
 import { minify } from "html-minifier-terser";
+import { type SiteConfig, SiteConfigSchema } from "./schema";
+import z, { ZodError } from "zod";
 
-export const config = {
+type ConfigDev = {
+  port: number;
+  openTimeout: number;
+};
+
+type Config = {
+  src: string;
+  out: string;
+  scripts: Array<string>;
+  styles: Array<string>;
+  config: string;
+  pug: string;
+  result: string;
+  dev: ConfigDev;
+};
+
+export const config: Config = {
   src: path.resolve(import.meta.dirname, "..", "src"),
   out: path.resolve(import.meta.dirname, "..", "out"),
   scripts: [
-    path.resolve(import.meta.dirname, "..", "src", "scripts", "main.js"),
+    path.resolve(import.meta.dirname, "..", "src", "scripts", "main.ts"),
   ],
   styles: [
     path.resolve(import.meta.dirname, "..", "src", "styles", "main.css"),
@@ -22,19 +40,25 @@ export const config = {
   },
 };
 
-export async function build(dev = false) {
-  const start = performance.now();
+export async function build(dev: boolean = false): Promise<boolean> {
+  const start: number = performance.now();
 
   if (!dev) {
     await rm(config.out, { recursive: true, force: true });
   }
 
-  let configJSON, jsBuild, cssBuild;
+  let configJSON: SiteConfig, jsBuild: BuildOutput, cssBuild: BuildOutput;
 
   try {
-    configJSON = await Bun.file(config.config).json();
+    const data: unknown = await Bun.file(config.config).json();
+    configJSON = SiteConfigSchema.parse(data);
   } catch (error) {
-    console.error("Parsing config failed:\n", error);
+    if (error instanceof ZodError) {
+      console.error("Config validation failed:\n", z.prettifyError(error));
+    } else {
+      console.error("Parsing config failed:\n", error);
+    }
+
     return false;
   }
 
@@ -70,13 +94,13 @@ export async function build(dev = false) {
     return false;
   }
 
-  let html;
+  let html: string;
 
   try {
     html = pug.renderFile(config.pug, {
       config: configJSON,
-      jsContent: await jsBuild.outputs[0].text(),
-      cssContent: await cssBuild.outputs[0].text(),
+      jsContent: await jsBuild.outputs[0]?.text(),
+      cssContent: await cssBuild.outputs[0]?.text(),
     });
   } catch (error) {
     console.error("Pug compilation failed:\n", error);
@@ -100,15 +124,15 @@ export async function build(dev = false) {
 
   await Bun.write(config.result, html);
 
-  const end = performance.now();
+  const end: number = performance.now();
   console.log(`Built (in ${(end - start).toFixed(2)}ms):`, config.result);
 
   return true;
 }
 
-export function serve(port = 5000) {
-  const file = Bun.file(config.result);
-  const server = Bun.serve({
+export function serve(port: number = 5000): Server<undefined> {
+  const file: BunFile = Bun.file(config.result);
+  const server: Server<undefined> = Bun.serve({
     port,
     routes: {
       "/": () => new Response(file),

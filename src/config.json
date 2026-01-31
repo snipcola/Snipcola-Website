@@ -45,6 +45,7 @@
     {
       "name": "Services",
       "icon": "link",
+      "columns": 3,
       "links": [
         {
           "label": "Code",
@@ -69,6 +70,7 @@
     {
       "name": "Projects",
       "icon": "code",
+      "columns": 2,
       "links": [
         {
           "label": "FilmHaven",
@@ -120,7 +122,13 @@
     {
       "name": "Socials",
       "icon": "user",
+      "columns": 4,
       "links": [
+        {
+          "label": "SimpleX",
+          "icon": "simplex",
+          "url": "https://links.snipcola.st/simplex"
+        },
         {
           "label": "Stoat",
           "icon": "stoat",
@@ -131,8 +139,7 @@
           "icon": "session",
           "url": "https://links.snipcola.st/session"
         }
-      ],
-      "compact": true
+      ]
     }
   ],
   "copyright": "Snipcola"

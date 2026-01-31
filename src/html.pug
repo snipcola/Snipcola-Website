@@ -32,7 +32,7 @@ html(lang = (config.language || "en"))
             h3(class = "label")
               i(class = `icon icon-${section.icon}`)
               p(style="margin: 0") #{section.name}
-            div(class = section.compact ? "links compact" : "links")
+            div(class = "links", style = { "--columns": section.columns })
               for link in section.links
                 a(class = "link", href = link.url, target = (link.newTab === undefined ? true : link.newTab) ? "_blank" : "_self")
                   div(class = "link-content")

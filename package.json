@@ -1,21 +1,25 @@
 {
   "name": "snipcola-website",
   "author": "Snipcola",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "bun run scripts/build.js",
-    "dev": "bun run scripts/dev.js",
-    "format": "prettier --write \"build/**/*.js\" \"src/**/*.{js,json,css}\"",
+    "build": "bun run scripts/build.ts",
+    "dev": "bun run scripts/dev.ts",
+    "format": "prettier --write \"build/**/*.ts\" \"{src,scripts}/**/*.{ts,json,css}\"",
     "release": "git push origin main:release --force"
   },
   "dependencies": {
     "html-minifier-terser": "7.2.0",
-    "pug": "3.0.3"
+    "pug": "3.0.3",
+    "zod": "4.3.6"
   },
   "devDependencies": {
+    "@types/bun": "1.3.8",
+    "@types/html-minifier-terser": "7.0.2",
+    "@types/pug": "2.0.10",
     "open": "11.0.0",
-    "prettier": "3.7.4"
+    "prettier": "3.8.1"
   }
 }
